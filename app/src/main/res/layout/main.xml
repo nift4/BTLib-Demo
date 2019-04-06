@@ -5,23 +5,36 @@
 	android:layout_height="match_parent"
 	android:gravity="center">
 
-	<Button
+	<LinearLayout
+		android:orientation="vertical"
 		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Server"
-		android:id="@+id/server_btn"/>
+		android:layout_height="wrap_content">
 
-	<Button
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Client"
-		android:id="@+id/client_btn"/>
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Server"
+			android:id="@+id/server_btn"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Client"
+			android:id="@+id/client_btn"/>
+
+	</LinearLayout>
 
 	<Button
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="Msg"
 		android:id="@+id/lsnews_btn"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="About"
+		android:id="@+id/about_btn"/>
 
 </LinearLayout>
 

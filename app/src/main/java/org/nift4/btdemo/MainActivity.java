@@ -83,6 +83,13 @@ public class MainActivity extends Activity
 									}
 								}
 							});
+						((Button) findViewById(R.id.about_btn)).setOnClickListener(new View.OnClickListener(){
+								@Override
+								public void onClick(View p1)
+								{
+									MainActivity.this.startActivity(new Intent(MainActivity.this,BluetoothService.AboutActivity.class));
+								}
+						});
 						// Wait 500ms
 						h.postDelayed(new Runnable(){
 							@Override
